@@ -1,0 +1,29 @@
+.pricing-section {
+}
+.pricing-section .faq-card {
+  height: 160px;
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 45px;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 1);
+  margin-bottom: 30px;
+}
+.pricing-section .faq-card .faq-content {
+  display: flex;
+  padding: 40px 60px;
+  align-items: center;
+}
+.pricing-section .faq-card .faq-content p {
+  margin-left: 25px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.pricing-section .faq-card .faq-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.pricing-section .sub-content {
+  max-width: 700px;
+}
