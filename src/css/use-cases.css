@@ -1,0 +1,28 @@
+.use-case-section {
+  margin: 120px 0;
+}
+.use-case-section .one-card {
+  padding: 70px 60px;
+  background: var(--secondary-color);
+  color: var(--white-color);
+}
+.use-case-section .one-card .card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+}
+
+.use-case-section .one-card .card-grid .grid-content {
+  max-width: 300px;
+}
+.use-case-section .one-card .card-grid .grid-content p {
+  margin: 20px 0;
+  line-height: 1.4;
+}
+.use-case-section .one-card .card-grid .grid-content .learn-more {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
+}

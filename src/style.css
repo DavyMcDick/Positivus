@@ -1,0 +1,72 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+/* css file import */
+@import url("/src/css/about-us.css");
+@import url("/src/css/use-cases.css");
+@import url("/src/css/pricing.css");
+@import url("/src/css/blog.css");
+@import url("/src/css/services.css");
+
+:root {
+  --primary-color: #b9ff66;
+  --secondary-color: #191a23;
+  --white-color: #f3f3f3;
+  --f-family: "Space Grotesk", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--f-family);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.6;
+  margin: 0 100px;
+}
+h4 {
+  font-weight: 300;
+}
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-right: 40px;
+}
+
+button {
+  font-size: 20px;
+  padding: 20px 35px;
+  border-radius: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.sub-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 80px 0;
+
+  & h2 {
+    background: var(--primary-color);
+    border-radius: 10px;
+    align-self: center;
+    padding: 0px 10px;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--secondary-color);
+  }
+  & p {
+    max-width: 700px;
+    line-height: 1.2;
+    color: var(--secondary-color);
+  }
+}

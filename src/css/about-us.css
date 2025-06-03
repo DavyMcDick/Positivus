@@ -1,0 +1,70 @@
+.about-section {
+  font-size: 20px;
+  margin-top: 40px;
+}
+.about-section .nav-main {
+  display: flex;
+  align-items: center;
+}
+.about-section .nav-main .logo-container {
+  flex: 1;
+  cursor: pointer;
+}
+.about-section .nav-main .menu-container {
+  display: flex;
+}
+.about-section .nav-main button {
+  font-size: 20px;
+  padding: 20px 35px;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.about-section .nav-main button:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.hero-section .hero-content {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  margin: 40px 0;
+}
+.hero-section .hero-content .hero-text {
+  max-width: 530px;
+}
+.hero-section .hero-content h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: black;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+.hero-section .hero-content p {
+  line-height: 1.4;
+  margin-bottom: 35px;
+}
+
+.hero-section .hero-content button {
+  background: var(--secondary-color);
+  color: var(--white-color);
+}
+.hero-section .hero-content button:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.hero-section .hero-content .hero-image {
+  margin-left: auto;
+}
+.company-logo {
+  display: flex;
+  align-items: center;
+}
+.company-logo .image-logo {
+  margin: 0px auto;
+  filter: grayscale(100%);
+}
