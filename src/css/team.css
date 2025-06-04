@@ -1,0 +1,53 @@
+.team-section {
+}
+.team-section .team-grids {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 20px;
+}
+.team-section .team-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 45px;
+  border: 1px solid var(--secondary-color);
+  background: var(--white-color);
+  padding: 40px 35px;
+  height: 330px;
+  width: 380px;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 1);
+}
+.team-section .team-cards .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.team-section .team-cards .header .team-image {
+  margin-right: 20px;
+}
+.team-section .team-cards .header .team-name {
+  margin-top: auto;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.team-section .team-cards .header .linkedin-icon {
+  margin-bottom: auto;
+}
+.team-section .team-cards hr {
+  width: 100%;
+  height: 1.5px;
+  background: black;
+  border: none;
+  margin: 28px 0;
+}
+.team-section .team-cards p {
+  font-size: 16px;
+}
+.team-section button {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 14px;
+  margin: 50px 0 0 auto;
+  display: flex;
+}
