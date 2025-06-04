@@ -1,5 +1,3 @@
-.team-section {
-}
 .team-section .team-grids {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
