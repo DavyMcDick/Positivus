@@ -196,69 +196,113 @@
           <div class="sub-content">
             <h2 class="sub-heading">Our Working Process</h2>
             <p class="sub-description">Step-by-Step Guide to Achieving Your Business Goals</p>
-          </div>
       </div>
       <div class="pricing-section">
-        <div class="faq-card">
-          <div class="faq-content">
+        <div class="faq-card active animate">
+          <div class="faq-content active">
+            <div class="faq-header">
             <h1>01</h1>
-            <p>Consultation</p>
+            <p class="question">Consultation</p>
             <div class="faq-icon">
-              <img src="assets/Plus icon.svg" alt="">
-            </div>
+              <span class="opener active"><img src="assets/Plus icon.svg" alt=""><span>
+              </div>
+            </div>  
+              <hr >
+              <p class="answer">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
           </div>
         </div>
-        <div class="faq-card">
+        <div class="faq-card animate reverse">
           <div class="faq-content">
+            <div class="faq-header">
             <h1>02</h1>
-            <p>Research and Strategy Development</p>
+            <p class="question">Research and Strategy Development</p>
             <div class="faq-icon">
-              <img src="assets/Plus icon.svg" alt="">
+              <span class="opener"><img src="assets/Plus icon.svg" alt=""><span>
+              </div>
             </div>
+              <hr>
+              <p class="answer">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
           </div>
         </div>
-        <div class="faq-card">
+        <div class="faq-card animate">
           <div class="faq-content">
+            <div class="faq-header">
             <h1>03</h1>
-            <p>Implementation</p>
+            <p class="question">Implementation</p>
             <div class="faq-icon">
-              <img src="assets/Plus icon.svg" alt="">
+              <span class="opener"><img src="assets/Plus icon.svg" alt=""><span>
+              </div>
             </div>
+              <hr>
+              <p class="answer">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
           </div>
         </div>
-        <div class="faq-card">
+        <div class="faq-card animate reverse">
           <div class="faq-content">
+            <div class="faq-header">
             <h1>04</h1>
-            <p>Monitoring and Optimization</p>
+            <p class="question">Monitoring and Optimization</p>
             <div class="faq-icon">
-              <img src="assets/Plus icon.svg" alt="">
+              <span class="opener"><img src="assets/Plus icon.svg" alt=""><span>
+              </div>
             </div>
+              <hr>
+              <p class="answer">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
           </div>
         </div>
-        <div class="faq-card">
+        <div class="faq-card animate">
           <div class="faq-content">
+            <div class="faq-header">
             <h1>05</h1>
-            <p>Reporting and Communication</p>
+            <p class="question">Reporting and Communication</p>
             <div class="faq-icon">
-              <img src="assets/Plus icon.svg" alt="">
+              <span class="opener"><img src="assets/Plus icon.svg" alt=""><span>
+              </div>
             </div>
+              <hr>
+              <p class="answer">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
           </div>
         </div>
-        <div class="faq-card">
+        <div class="faq-card animate reverse">
           <div class="faq-content">
+            <div class="faq-header">
             <h1>06</h1>
-            <p>Continual Improvement</p>
+            <p class="question">Continual Improvement</p>
             <div class="faq-icon">
-              <img src="assets/Plus icon.svg" alt="">
+              <span class="opener"><img src="assets/Plus icon.svg" alt=""><span>
+              </div>
             </div>
+              <hr>
+              <p class="answer">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
           </div>
         </div>
-        <div class="sub-content">
-          <h2 class="sub-heading">Teams</h2>
-          <p class="sub-description">Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+
         </div>
+ 
       </div>
       <div class="blog-section"></div>
     </main>
+    <script>
+      const faqIcons = document.querySelectorAll('.faq-icon');
+    
+      faqIcons.forEach(iconContainer => {
+        iconContainer.addEventListener('click', (e) => {
+          e.stopPropagation();
+    
+          const card = iconContainer.closest('.faq-card');
+          const content = card.querySelector('.faq-content');
+          const icon = iconContainer.querySelector('img');
+    
+          content.classList.toggle('active');
+          card.classList.toggle('active');
+    
+          icon.src = content.classList.contains('active')
+            ? 'assets/Minus.svg'
+            : 'assets/Plus icon.svg';
+        });
+      });
+    </script>
+    
+     
   </body>
 </html>

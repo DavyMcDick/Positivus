@@ -1,29 +1,69 @@
-.pricing-section {
-}
 .pricing-section .faq-card {
-  height: 160px;
-  width: 100%;
   background-color: var(--white-color);
   border-radius: 45px;
   border: 1px solid var(--secondary-color);
   box-shadow: 0 5px 0px rgba(0, 0, 0, 1);
   margin-bottom: 30px;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
+
 .pricing-section .faq-card .faq-content {
   display: flex;
-  padding: 40px 60px;
-  align-items: center;
+  flex-direction: column;
+  padding: 40px 60px 0px 60px;
+  gap: 20px;
 }
-.pricing-section .faq-card .faq-content p {
+
+.pricing-section .faq-card .faq-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.pricing-section .faq-card .question {
   margin-left: 25px;
   font-size: 30px;
   font-weight: 500;
 }
+
 .pricing-section .faq-card .faq-icon {
   margin-left: auto;
   cursor: pointer;
 }
 
-.pricing-section .sub-content {
-  max-width: 700px;
+.pricing-section .faq-card hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary-color);
+  border: none;
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.pricing-section .faq-card .answer {
+  font-size: 16px;
+  line-height: 1.6;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease, opacity 0.4s ease, padding 0.3s ease;
+}
+
+.faq-card .faq-content.active .answer {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px 0 20px;
+}
+
+.faq-card .faq-content.active hr {
+  max-height: 1px;
+  opacity: 1;
+}
+
+.faq-card.active {
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease;
 }
