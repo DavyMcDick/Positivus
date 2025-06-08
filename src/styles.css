@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 /* css file import */
-@import url("/src/css/about-us.css");
-@import url("/src/css/use-cases.css");
-@import url("/src/css/pricing.css");
-@import url("/src/css/blog.css");
-@import url("/src/css/services.css");
-@import url("/src/css/team.css");
-@import url("/src/css/testimonial.css");
-@import url("/src/css/footer.css");
+@import url("src/css/about-us.css");
+@import url("src/css/use-cases.css");
+@import url("src/css/pricing.css");
+@import url("src/css/blog.css");
+@import url("src/css/services.css");
+@import url("src/css/team.css");
+@import url("src/css/testimonial.css");
+@import url("src/css/footer.css");
 
 :root {
   --primary-color: #b9ff66;
