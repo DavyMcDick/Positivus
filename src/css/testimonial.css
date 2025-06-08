@@ -1,0 +1,51 @@
+.contact-card {
+  height: 770px;
+  width: 100%;
+  background: var(--white-color);
+  border-radius: 45px;
+  padding: 60px 0px 80px 100px;
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  gap: 180px;
+  overflow: hidden;
+}
+
+.contact-card .radio {
+  display: flex;
+  gap: 10px;
+  & p:nth-child(2) {
+    margin-right: 35px;
+  }
+}
+.contact-card .form-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+  margin: 40px 0px;
+}
+.contact-card .form-info input {
+  border-radius: 15px;
+  padding: 18px 30px;
+  border: 1px solid var(--secondary-color);
+  margin: 10px 0;
+  font-size: 16px;
+}
+.contact-card .form-info textarea {
+  height: 200px;
+  border-radius: 15px;
+  padding: 18px 30px;
+  border: 1px solid var(--secondary-color);
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contact-card button {
+  max-width: 560px;
+  width: 100%;
+  background: var(--secondary-color);
+  color: var(--white-color);
+  &:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}

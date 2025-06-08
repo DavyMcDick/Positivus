@@ -8,6 +8,8 @@
 @import url("/src/css/blog.css");
 @import url("/src/css/services.css");
 @import url("/src/css/team.css");
+@import url("/src/css/testimonial.css");
+@import url("/src/css/footer.css");
 
 :root {
   --primary-color: #b9ff66;
