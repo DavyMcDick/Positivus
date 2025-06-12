@@ -68,3 +68,8 @@
   margin: 0px auto;
   filter: grayscale(100%);
 }
+@media (max-width: 400px) {
+  .logo-container img {
+    height: 20px;
+  }
+}

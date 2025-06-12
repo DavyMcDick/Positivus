@@ -107,3 +107,9 @@ button {
     transform: translateX(0);
   }
 }
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0 40px;
+  }
+}
